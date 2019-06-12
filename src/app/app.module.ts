@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { StarComponent } from './star/star.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     CourseComponent,
-    StarComponent
+    StarComponent,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
