@@ -8,13 +8,14 @@ import { Component } from '@angular/core';
     <h2>{{title}}</h2>
     <ul>
       <li *ngFor="let course of courses">{{course}}</li>
-    </ul>
-    {{ course.title | uppercase }}<br />
-    {{ course.students | number}}<br />
-    {{ course.rating | number:'1.2-2' }}<br />
-    {{ course.price | currency:'USD':true }}<br />
-    {{ course.releaseDate | date:'shortDate' }}
-    `
+    </ul>`
+    // Pipes examples
+    // {{ course.title | uppercase }}<br />
+    // {{ course.students | number}}<br />
+    // {{ course.rating | number:'1.2-2' }}<br />
+    // {{ course.price | currency:'USD':true }}<br />
+    // {{ course.releaseDate | date:'shortDate' }}
+    
     // Two-way Binding: <input [(ngModel)] = "email" (keyup.enter)="onKeyUp()"/>`
     // Template variables: <input #email (keyup.enter)="onKeyUp(email.value)" />`
     // Looking for enter to be edited: <input (keyup.enter)="onKeyUp($event)" />`
